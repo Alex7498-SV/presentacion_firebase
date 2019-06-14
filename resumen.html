@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Resumen Firebase Auth and implementation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <h1>Firebase authentication</h1>
+        <p>
+            Es un servicio de firebase que permite que las aplicaciones autentiquen a sus usuarios, además de eso permite que las credenciales de los usuarios se guarden en la nube de forma segura.
+        </p>
+        <h3>Qué servicios proporciona?</h3>
+        <p>Firebase Authentication proporciona servicios de backend, SDK fáciles de usar y bibliotecas de UI ya elaboradas para poder autenticar a los usuarios desde una aplicación
+            Admite múltiples formas de autenticación como por ejemplo:
+            <ul>
+                <li>Números de teléfono
+                </li>
+                <li>Contraseñas
+
+                </li>
+                <li>Proveedores de identidad federada
+                </li>
+            </ul>
+            </p>
+        <h3>FirebaseUI Auth
+        </h3>
+        <p><b>Solución de autenticación directa:</b> FirebaseUI proporciona una solución de autenticación directa que controla los flujos de IU para los usuarios que acceden con direcciones de correo electrónico y contraseñas, números de teléfono y con proveedores de identidad federada populares, que incluyen el Acceso con Google y el Acceso con Facebook.
+        </p>
+        <h3>Autenticación del SDK de Firebase
+        </h3>
+        <ul>
+            <li>Autenticación basada en correo y contraseña.
+            </li>
+            <li>Integración con proveedores de identidad federada
+            </li>
+            <li>Autenticación con número de teléfono
+            </li>
+            <li>Integración con sistemas de autenticación personalizadas
+            </li>
+            <li>Autenticación anónima
+            </li>
+          </ul> 
+        <h3>Cómo Funciona?
+        </h3>
+        <p>Para que un usuario acceda a tu app, primero debes obtener credenciales de autenticación del usuario. Luego, los servicios de backend de Firebase verificarán esas credenciales y mostrarán una respuesta al cliente.<br>
+            Cuando el acceso se realiza correctamente, puedes ver la información básica del perfil del usuario y controlar el acceso del usuario a los datos almacenados en otros productos de Firebase. <br>
+            También puedes utilizar el token de autenticación proporcionado para verificar la identidad de los usuarios en tus propios servicios de backend.<br>
+            </p>
+        <h3>Implementación 
+        </h3>
+        <p>implementation 'com.google.firebase:firebase-auth:17.0.0'
+        </p>
+        <ul>
+            <li>Configurar métodos de acceso                </li>
+            <li>Personalizar la UI de acceso                </li>
+            <li>Utilizar Firebase UI para el flujo de acceso / Pasar las credenciales del usuario al SDK de Firebase Autenticación                 </li>
+        </ul>
+        <script src="" async defer></script>
+    </body>
+</html>
